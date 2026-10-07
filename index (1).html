@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Memory Match</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Main menu -->
+  <section id="menu-screen" class="menu">
+    <div class="menu-cards" aria-hidden="true"><span>🐙</span><span>🌈</span><span>🚀</span><span>🍩</span></div>
+    <h1>Memory Match</h1>
+    <p class="tagline">Flip two cards, find the pair. Five levels, and each one gets tougher.</p>
+    <nav class="menu-buttons">
+      <button id="play-btn" type="button" class="big">Play</button>
+      <button id="contact-btn" type="button" class="big secondary">Contact us</button>
+      <button id="exit-btn" type="button" class="big secondary">Exit</button>
+    </nav>
+  </section>
+
+  <!-- Game -->
+  <main id="game-screen" class="game" hidden>
+    <header>
+      <h1>Memory Match</h1>
+      <div class="header-buttons">
+        <button id="menu-btn" type="button" class="secondary">Menu</button>
+        <button id="restart" type="button">Restart</button>
+      </div>
+    </header>
+
+    <section class="stats" aria-live="polite">
+      <div><span>Level</span><strong id="level">1</strong></div>
+      <div><span>Score</span><strong id="score">0</strong></div>
+      <div><span>Moves</span><strong id="moves">0</strong></div>
+      <div><span>Mistakes</span><strong id="mistakes">0</strong></div>
+      <div id="time-box"><span>Time</span><strong id="time">0:00</strong></div>
+      <div><span>Best</span><strong id="best">0</strong></div>
+    </section>
+
+    <section id="board" class="board" aria-label="Card grid"></section>
+  </main>
+
+  <!-- Popup used for warnings, level complete, win, lose, contact -->
+  <div id="overlay" class="overlay" hidden>
+    <div class="panel" role="dialog" aria-modal="true" aria-labelledby="panel-title">
+      <h2 id="panel-title"></h2>
+      <p id="panel-text"></p>
+      <dl id="panel-details"></dl>
+      <div id="panel-buttons" class="panel-buttons"></div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
