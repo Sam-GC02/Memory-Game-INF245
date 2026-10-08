@@ -15,7 +15,7 @@ const SECONDS_PER_PAIR = 6;       // par time = pairs * this (for the time bonus
 const BONUS_PER_SECOND = 5;
 const FLIP_BACK_DELAY = 800;      // ms
 const BEST_KEY = "memory-match-best";
-const CONTACT_EMAIL = "yourname@example.com"; // <-- change this
+const CONTACT_EMAIL = "Samchiong02@gmail.com";
 
 // 8x8 needs 32 different faces
 const EMOJIS = ["🐶","🐱","🦊","🐼","🐸","🦁","🐙","🦋","🍎","🍕","🍩","⚽","🚀","🎸","🌵","🌈","⭐","🎲",
